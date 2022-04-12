@@ -5,7 +5,7 @@ function Intro() {
     <div className='i'>
       <div className='i-left'>
         <div className='i-left-wrapper'>
-          <h2 className='i-intro'>Hell, My name is</h2>
+          <h2 className='i-intro'>Hello, My name is</h2>
           <h1 className='i-name'>Zahid Abdikadir</h1>
           <div className='i-title'>
             <div className='i-title-wrapper'>
@@ -23,9 +23,9 @@ function Intro() {
       </div>
       <div className='i-right'>
         <div className='i-bg'>
-          <img src={Me} alt='' className='i-img' />
+          <img src={Me} alt='of Zahid' className='i-img' />
         </div>
-        <img src={Me} alt='' className='hidden-img' />
+        <img src={Me} alt='of Zahid' className='hidden-img' />
       </div>
     </div>
   )
