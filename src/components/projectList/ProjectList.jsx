@@ -4,9 +4,9 @@ import { project } from '../../data'
 
 function ProjectList() {
   const projectMap = project.map(item => (
-    <div className='container'>
+    <div key={item.id} className='container'>
       <h3 className='p-name'>{item.title}</h3>
-      <Projects key={item.id} img={item.img} />
+      <Projects img={item.img} />
       <p className='p-about'>{item.about}</p>
       <br />
       <a href={item.demo} target='_blank' rel='noreferrer' className='btn'>

@@ -4,10 +4,13 @@ import Email from '../../assets/email.png'
 import Address from '../../assets/address.png'
 import { useContext, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { ThemeContext } from '../../context'
 
 function ContactForm() {
   const formRef = useRef()
   const [done, setDone] = useState(false)
+  const theme = useContext(ThemeContext)
+  const darkMode = theme.state.darkMode
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -37,8 +40,13 @@ function ContactForm() {
           <h1 className='c-title'>Lets Talk! Contact Me Below</h1>
           <div className='c-info'>
             <div className='c-info-item'>
-              <img src={Phone} alt='my Phone number' className='c-icon' />
-              952 283 9219
+              <a
+                style={{ color: darkMode && 'white' }}
+                href='tel:+1-952-283-9219'
+              >
+                <img src={Phone} alt='my Phone number' className='c-icon' />
+                952 283 9219
+              </a>
             </div>
             <div className='c-info-item'>
               <img className='c-icon' src={Email} alt='my email' />
@@ -54,13 +62,33 @@ function ContactForm() {
       <div className='c-right'>
         <p className='c-desc'>
           <b>What's your story?</b> Get in touch. Always available for
-          freelancing if the right project comes along. me.
+          freelancing if the right project comes along. Email me.
         </p>
         <form ref={formRef} onSubmit={handleSubmit}>
-          <input type='text' placeholder='Name' name='user_name' />
-          <input type='text' placeholder='Subject' name='user_subject' />
-          <input type='text' placeholder='Email' name='user_email' />
-          <textarea rows='5' placeholder='Message' name='message' />
+          <input
+            style={{ backgroundColor: darkMode && '#333' }}
+            type='text'
+            placeholder='Name'
+            name='user_name'
+          />
+          <input
+            style={{ backgroundColor: darkMode && '#333' }}
+            type='text'
+            placeholder='Subject'
+            name='user_subject'
+          />
+          <input
+            style={{ backgroundColor: darkMode && '#333' }}
+            type='text'
+            placeholder='Email'
+            name='user_email'
+          />
+          <textarea
+            style={{ backgroundColor: darkMode && '#333' }}
+            rows='5'
+            placeholder='Message'
+            name='message'
+          />
           <button>Submit</button>
           {done && ' Thank you...'}
         </form>
