@@ -31,6 +31,8 @@ function AboutMe() {
           dancing and expressing myself that way. Getting lost in the music and
           relieving some stress.
         </p>
+        <br />
+        <hr />
       </div>
     </div>
   )
