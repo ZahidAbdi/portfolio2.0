@@ -1,8 +1,8 @@
-import Home from './components/Home'
+import Intro from './components/intro/Intro'
 function App() {
   return (
     <div className='App'>
-      <Home />
+      <Intro />
     </div>
   )
 }
