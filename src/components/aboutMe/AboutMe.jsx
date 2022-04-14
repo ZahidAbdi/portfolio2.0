@@ -17,17 +17,16 @@ function AboutMe() {
         <p className='a-sup'>I'm a Full-stack Developer</p>
         <p className='a-desc'>
           I am a web developer and recent graduate of the Front End Web
-          Development Career Path bootcamp at Thinkful. Coding is so interesting
-          to me. I can create so much with the skills I've learned. I get to use
-          my imagination to create some great applications. The power to make my
-          ideas come to life is such an awesome feeling. I want to work on a
-          team with great programmers and learn as much as I can.
+          Development Career Path bootcamp at Thinkful. Using my imagination in
+          tandem with my skills I have the power to make my ideas come to life.
+          I want to work on a team with great programmers and learn as much as I
+          can. I want to make my mom proud 😊
         </p>
         <br />
         <p className='a-desc'>
-          When I'm not coding, I'm usually either reading or out with my camera
-          exploring. I also like to dance. From hip-hop to classical. I love
-          dancing and expressing myself that way. Getting lost in the music and
+          When I'm not coding, I'm typically found exploring the world with my
+          camera or deep into a good book. From hip-hop to classical, I love
+          dancing and expressing myself. I enjoy getting lost in the music and
           relieving some stress.
         </p>
         <br />
