@@ -16,7 +16,7 @@ function Intro() {
             </div>
           </div>
           <p className='i-desc'>
-            I design and develope services for customers of all sizes,
+            I design and develop services for business of all sizes,
             specializing in creating modern websites and web services
           </p>
         </div>
